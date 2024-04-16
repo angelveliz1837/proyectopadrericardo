@@ -23,8 +23,9 @@
         <ul>
           <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
           <li><a href="#mensaje" onclick="seleccionar()">MENSAJE</a></li>
-          <li><a href="#evento" onclick="seleccionar()">EVENTO</a></li>
+          <li><a href="#sacramento" onclick="seleccionar()">SACRAMENTO</a></li>
           <li><a href="#donativo" onclick="seleccionar()">DONATIVO</a></li>
+          <li><a href="#pregunta" onclick="seleccionar()">PREGUNTAS FRECUENTES</a></li>
         </ul>
       </nav>
       <!--Redes-->
@@ -92,56 +93,65 @@
       </div>
     </div>
     <br>
-    <!--Eventos-->
-    <div class="row" id="evento">
-      <h1 class="titulo">EVENTOS</h1>
+    <!--Sacramentos-->
+    <div class="row" id="sacramento">
+      <h1 class="titulo">SACRAMENTOS</h1>
       <div class="col-4 evento__navegador">
         <div class="list-group" id="list-tab" role="tablist">
           <a class="list-group-item list-group-item-action active" id="list-evento1-list" data-bs-toggle="list"
-            href="#list-evento1" role="tab" aria-controls="list-evento1">MISA</a>
+            href="#list-evento1" role="tab" aria-controls="list-evento1">BAUTIZO</a>
           <a class="list-group-item list-group-item-action" id="list-evento2-list" data-bs-toggle="list"
-            href="#list-evento2" role="tab" aria-controls="list-evento2">BAUTIZO</a>
+            href="#list-evento2" role="tab" aria-controls="list-evento2">PRIMERA COMUNIÓN</a>
           <a class="list-group-item list-group-item-action" id="list-evento3-list" data-bs-toggle="list"
-            href="#list-evento3" role="tab" aria-controls="list-evento3">MATRIMONIO</a>
+            href="#list-evento3" role="tab" aria-controls="list-evento3">CONFIRMACIÓN</a>
+          <a class="list-group-item list-group-item-action" id="list-evento4-list" data-bs-toggle="list"
+            href="#list-evento4" role="tab" aria-controls="list-evento4">CONFESIÓN</a>
+          <a class="list-group-item list-group-item-action" id="list-evento5-list" data-bs-toggle="list"
+            href="#list-evento5" role="tab" aria-controls="list-evento5">MATRIMONIO</a>
+          <a class="list-group-item list-group-item-action" id="list-evento6-list" data-bs-toggle="list"
+            href="#list-evento6" role="tab" aria-controls="list-evento6">UNCIÓN DE LOS ENFERMOS</a>
         </div>
       </div>
       <div class="col-8 evento__texto">
         <div class="tab-content" id="nav-tabContent">
           <div class="tab-pane fade show active texto" id="list-evento1" role="tabpanel"
             aria-labelledby="list-evento1-list">
-            <p>La misa es un acto litúrgico central en la tradición cristiana, especialmente en la
-              Iglesia Católica. Es una ceremonia religiosa en la que los fieles se congregan para conmemorar y celebrar
-              el sacrificio de Jesucristo en la cruz, tal como está descrito en la Biblia. Durante la misa, se leen
-              pasajes bíblicos, se ofrecen oraciones y se llevan a cabo rituales sagrados que incluyen la consagración
-              del pan y del vino, que se consideran la verdadera presencia de Cristo. La misa tiene como objetivo
-              principal la adoración a Dios y la renovación espiritual de los fieles.</p>
-            <div class="imagen">
-              <img src="img/misa.jpg">
-            </div>
-          </div>
-          <div class="tab-pane fade texto" id="list-evento2" role="tabpanel" aria-labelledby="list-evento2-list">
-            <p>El bautizo es un sacramento cristiano que simboliza la purificación espiritual y la
-              iniciación en la fe cristiana. En la Iglesia Católica, el bautizo se realiza generalmente a los pocos
-              meses de nacer, aunque también puede ser administrado en edades más avanzadas a aquellos que no han sido
-              bautizados. Durante la ceremonia, el agua bendita es derramada sobre la cabeza del individuo, simbolizando
-              el lavado de los pecados y la recepción del Espíritu Santo. Los padrinos, que son personas elegidas por
-              los padres del niño o por el adulto que se bautiza, tienen la responsabilidad de guiar espiritualmente
-              al bautizado en su vida cristiana.</p>
+            <p>Bautizo de niños y niñas de hasta 7 años de edad.</p>
             <div class="imagen">
               <img src="img/bautizo.jpg">
             </div>
           </div>
+          <div class="tab-pane fade texto" id="list-evento2" role="tabpanel" aria-labelledby="list-evento2-list">
+            <p>Este sacramento está dirigido a niñas y niños de 9 a 11 años.</p>
+            <div class="imagen">
+              <img src="img/primeracomunion.jpg">
+            </div>
+          </div>
           <div class="tab-pane fade texto" id="list-evento3" role="tabpanel" aria-labelledby="list-evento3-list">
-            <p>El matrimonio es una unión legal y/o religiosa entre dos personas que establece un vínculo
-              conyugal, con derechos y obligaciones tanto legales como morales. En muchas culturas y religiones,
-              el matrimonio se considera un compromiso sagrado y una institución fundamental para la formación de la
-              familia. Es un acto mediante el cual dos personas se comprometen a compartir sus vidas, sus bienes y sus
-              responsabilidades. En el contexto cristiano, el matrimonio es considerado un sacramento que une a la
-              pareja
-              ante Dios y la comunidad, y se celebra con una ceremonia en la que los contrayentes intercambian votos y
-              anillos. Los esposos se prometen amor, fidelidad y apoyo mutuo en todas las circunstancias de la vida.</p>
+            <p>Para jóvenes de ambos sexos entre 15 y 17 años de edad o que se encuentran cursando el 4to. o 5to. 
+              año de secundaria. Confirmación para adultos, mayores de 18 años de edad.</p>
+            <div class="imagen">
+              <img src="img/confirmacion.jpg">
+            </div>
+          </div>
+          <div class="tab-pane fade texto" id="list-evento4" role="tabpanel" aria-labelledby="list-evento4-list">
+            <p>El sacramento de la reconciliación, también llamado confesión o penitencia, nos concede el perdón y 
+              la sanación que necesitamos.</p>
+            <div class="imagen">
+              <img src="img/confesion.jpg">
+            </div>
+          </div>
+          <div class="tab-pane fade texto" id="list-evento5" role="tabpanel" aria-labelledby="list-evento5-list">
+            <p>Requisitos para toda pareja que desee contraer matrimonio en la iglesia Nuestra Señora de Fátima.</p>
             <div class="imagen">
               <img src="img/matrimonio.jpg">
+            </div>
+          </div>
+          <div class="tab-pane fade texto" id="list-evento6" role="tabpanel" aria-labelledby="list-evento6-list">
+            <p>Para solicitar que le sea impartida la unción a algún enfermo que vive dentro de nuestra jurisdicción, 
+              deberá llamar al despacho parroquial.</p>
+            <div class="imagen">
+              <img src="img/unciondelosenfermos.jpg">
             </div>
           </div>
         </div>
@@ -180,6 +190,217 @@
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
                 content.</p>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Preguntas Frecuentes-->
+    <div id="pregunta">
+      <h1 class="titulo">PREGUNTAS FRECUENTES</h1>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button subtitulo__pregunta" type="button" data-bs-toggle="collapse" data-bs-target="#preguntaUnoHorario" aria-expanded="true" aria-controls="preguntaUnoHorario">
+              ¿Cuál es el horario de atención en el despacho parroquial?
+            </button>
+          </h2>
+          <div id="preguntaUnoHorario" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              De lunes a viernes de 8 a 1 de la tarde y de 2 p.m. a 4 p.m. Este mismo horario rige para las consultas 
+              por whatsapp.</div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <h2 class="subtitulo">MISAS</h2>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button subtitulo__pregunta" type="button" data-bs-toggle="collapse" data-bs-target="#preguntaUnoMisa" aria-expanded="true" aria-controls="preguntaUnoMisa">
+              ¿Celebran misas presenciales y virtuales?, ¿cuál es el trámite para solicitarlas?
+            </button>
+          </h2>
+          <div id="preguntaUnoMisa" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Para solicitar intenciones en las misas comunitarias debe escribir un whatsapp a este número: 998 720 312
+              (llamar porque este servicio está habilitado para recibir llamadas), CON UN MÍNIMO DE 
+              TRES DÍAS DE ANTICIPACIÓN debido a la alta demanda. También se pueden reservar personalmente en el instituto 
+              IDEPT. No se atienden solicitudes a través de la web o de las redes sociales.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed subtitulo__pregunta" type="button" data-bs-toggle="collapse" data-bs-target="#preguntaDosMisa" aria-expanded="false" aria-controls="preguntaDosMisa">
+              ¿Es posible separar una misa para los próximos meses?
+            </button>
+          </h2>
+          <div id="preguntaDosMisa" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Las misas se agendan solo para el mes en curso porque no sabemos los horarios que tendremos en los 
+              próximos meses. Es importante tomar en cuenta que los domingos no leemos intenciones en nuestras misas, 
+              solo de lunes a sábado.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed subtitulo__pregunta" type="button" data-bs-toggle="collapse" data-bs-target="#preguntaTresMisa" aria-expanded="false" aria-controls="preguntaTresMisa">
+              ¿Cuánto cuesta la misa?
+            </button>
+          </h2>
+          <div id="preguntaTresMisa" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              La misa tiene un costo de 100 nuevos soles, se puede recibir una colaboración voluntaria destinada a las 
+              obras de misericordia de nuestra parroquia.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed subtitulo__pregunta" type="button" data-bs-toggle="collapse" data-bs-target="#preguntaCuatroMisa" aria-expanded="false" aria-controls="preguntaCuatroMisa">
+              ¿Cómo puedo ver las misas virtuales?
+            </button>
+          </h2>
+          <div id="preguntaCuatroMisa" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Las misas virtuales se transmiten por nuestro canal de Facebook: Ricardo Cordova Velasquez.
+              Diez minutos antes de cada misa publicamos en el FB de la parroquia el enlace para la misa del día, 
+              pero también se puede ingresar directamente desde el 
+              link: https://web.facebook.com/victorricardo.cordovavelasquez.9
+              Las misas quedan grabadas allí para que las personas interesadas las puedan mirar cuando lo deseen o 
+              compartirlas enviando el enlace respectivo de cada misa.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed subtitulo__pregunta" type="button" data-bs-toggle="collapse" data-bs-target="#preguntaCincoMisa" aria-expanded="false" aria-controls="preguntaCincoMisa">
+              ¿Se pueden adquirir coronas de misa?
+            </button>
+          </h2>
+          <div id="preguntaCincoMisa" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Las coronas de misas de nuestra parroquia son por una sola vez. El sacerdote la reza a solas (por el alma 
+              del difunto), pero no sabemos el día ni la hora. Cuestan 25 soles y se adquieren en el despacho parroquial 
+              dentro del horario establecido.
+              Las personas que deseen coronas perpetuas, deben adquirirlas en "falta la dirección"</div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <h2 class="subtitulo">BAUTIZOS</h2>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button subtitulo__pregunta" type="button" data-bs-toggle="collapse" data-bs-target="#preguntaUnoBautizo" aria-expanded="true" aria-controls="preguntaUnoBautizo">
+              ¿Es posible bautizar a niños mayores de 7 años?
+            </button>
+          </h2>
+          <div id="preguntaUnoBautizo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Niñas y niños mayores de 7 años solo se puede bautizar siempre y cuando haya recibido una catequesis de 
+              preparación. Generalmente, como a los 9 o 10 años se preparan para la primera comunión, se recomienda que 
+              lleven esa catequesis y se puedan bautizar días antes de la comunión.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed subtitulo__pregunta" type="button" data-bs-toggle="collapse" data-bs-target="#preguntaDosBautizo" aria-expanded="false" aria-controls="preguntaDosBautizo">
+              ¿Aceptan padrinos del mismo sexo?
+            </button>
+          </h2>
+          <div id="preguntaDosBautizo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Solo se aceptan padrino y madrina. No pueden ser dos madrinas o dos padrinos pero sí una sola madrina 
+              o un solo padrino.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed subtitulo__pregunta" type="button" data-bs-toggle="collapse" data-bs-target="#preguntaTresBautizo" aria-expanded="false" aria-controls="preguntaTresBautizo">
+              ¿Es indispensable que los padrinos estén casados por la iglesia?
+            </button>
+          </h2>
+          <div id="preguntaTresBautizo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              No es indispensable que los padrinos estén casados por la iglesia. Sin embargo, sí es necesario que 
+              ambos estén confirmados.</div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <h2 class="subtitulo">BODAS</h2>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button subtitulo__pregunta" type="button" data-bs-toggle="collapse" data-bs-target="#preguntaUnoBoda" aria-expanded="true" aria-controls="preguntaUnoBoda">
+              ¿Cómo saber las fechas disponibles para bodas?
+            </button>
+          </h2>
+          <div id="preguntaUnoBoda" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Para conocer las fechas disponibles para bodas deben acercarse al instituto IDEPT dentro del horario 
+              establecido. También hay atención telefónica.
+              MUY IMPORTANTE: No se aceptan reservas previas de fecha, estas se separan al momento de abrirse el pliego 
+              matrimonial.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed subtitulo__pregunta" type="button" data-bs-toggle="collapse" data-bs-target="#preguntaDosBoda" aria-expanded="false" aria-controls="preguntaDosBoda">
+              ¿Cuál es el procedimiento para matrimonios mixtos?
+            </button>
+          </h2>
+          <div id="preguntaDosBoda" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Para realizar matrimonios entre una persona católica y una no católica pero sí cristiana, los 
+              contrayentes deben firmar una declaración en la que la parte no católica jura estar dispuesta a que 
+              los hijos sean educados dentro de nuestra fe católica.</div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <h2 class="subtitulo">PARTIDAS, SACRAMENTOS PARA ADULTOS Y OTRAS CONSULTAS</h2>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button subtitulo__pregunta" type="button" data-bs-toggle="collapse" data-bs-target="#preguntaUnoPartida" aria-expanded="true" aria-controls="preguntaUnoPartida">
+              ¿Cuál es el trámite para solicitar partidas de algún sacramento?
+            </button>
+          </h2>
+          <div id="preguntaUnoPartida" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Para solicitar partidas deben acercarse al despacho parroquial, dentro del horario de atención, con los 
+              datos y fecha del sacramento. No hay atención por teléfono. El precio de las partidas es de 25 soles. 
+              Normalmente se entregan en la tarde del día siguiente de solicitadas. Cualquier persona puede solicitar 
+              y/o recoger las partidas. Al momento de recogerla, se debe presentar el recibo que se le dio al momento 
+              de solicitar la partida, para ponerle el sello correspondiente.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed subtitulo__pregunta" type="button" data-bs-toggle="collapse" data-bs-target="#preguntaDosPartida" aria-expanded="false" aria-controls="preguntaDosPartida">
+              ¿Cuál es el trámite para recibir catequesis para adultos?
+            </button>
+          </h2>
+          <div id="preguntaDosPartida" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Las personas mayores de 18 años a las que les falte recibir algún sacramento, pueden dejar su nombre y 
+              datos personales en el despacho parroquial. Cuando se completen los cupos les avisaremos sobre las fechas 
+              y modalidad de las charlas. También pueden enviar un whatsapp al 998 720 312 ( o llamar porque el 
+              celular está habilitado para recibir llamadas).</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed subtitulo__pregunta" type="button" data-bs-toggle="collapse" data-bs-target="#preguntaTresPartida" aria-expanded="false" aria-controls="preguntaTresPartida">
+              ¿Cuáles son las fiestas de precepto de la Iglesia Católica?
+            </button>
+          </h2>
+          <div id="preguntaTresPartida" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Santa Madre de Dios: 1° de enero (feriado); Epifanía del Señor: 6 de enero; San José: 19 de marzo; 
+              Ascensión del Señor: séptimo domingo de Pascua; Cuerpo y Sangre de Cristo: varía según el Calendario 
+              Litúrgico y se celebra en domingo; San Pedro y San Pablo: 29 junio (feriado); Asunción de María: 15 de 
+              agosto; Todos los Santos: 1° de noviembre (feriado); Inmaculada Concepción de María: 8 de diciembre 
+              (feriado); Navidad: 25 de diciembre (feriado).</div>
           </div>
         </div>
       </div>

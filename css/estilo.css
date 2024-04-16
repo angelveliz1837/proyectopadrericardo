@@ -79,7 +79,24 @@ html{
     font-weight: bold;
 }
 
+.subtitulo{
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color:goldenrod;
+}
 
+    .subtitulo__pregunta{
+        font-size: large;
+        font-weight: bold;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .accordion-button:not(.collapsed){
+        background-color: #ffe799;
+        border-color: #ffe799;
+        color:brown;
+    }
 
 #informacion {
     display: flex;
@@ -126,42 +143,6 @@ font-size: 100%;
 
 @media screen and (max-width:992px){
 
-    .texto p{
-        font-size:medium;
-    }
-
-    .imagen img{
-        width: 235px;
-    }
-}
-
-@media screen and (max-width:768px){
-    .texto {
-        width: 100%;
-    }
-
-    .imagen {
-        width: 100%;
-        text-align: center;
-    }
-
-    .imagen img{
-        width: 350px;
-    }
-}
-
-@media screen and (max-width:768px){
-    .texto p{
-        font-size: small;
-    }
-
-    .imagen img{
-        width: 300px;
-    }
-}
-
-@media screen and (max-width:700px){
-
     nav{
         display: none;
     }
@@ -183,7 +164,33 @@ font-size: 100%;
         border-bottom: 1px solid #fff;
         padding: 10px 0;
     }
-    
+
+    .texto p{
+        font-size:medium;
+    }
+
+    .imagen img{
+        width: 235px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .texto {
+        width: 100%;
+    }
+
+    .texto p{
+        font-size: small;
+    }
+
+    .imagen {
+        width: 100%;
+        text-align: center;
+    }
+
+    .imagen img{
+        width: 300px;
+    }
 }
 
 @media screen and (max-width:546px){
@@ -214,6 +221,10 @@ font-size: 100%;
 
     .imagen img{
         width: 250px;
+    }
+
+    .subtitulo{
+        font-size: x-large;
     }
 
 }
