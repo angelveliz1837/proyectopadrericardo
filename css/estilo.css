@@ -1,0 +1,225 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    /* me permite deslizar cuando hago clic en los links del menu */
+    scroll-behavior: smooth;
+}
+
+.contenedor-header{
+    background: #ffe799;
+    width: 100%;
+}
+
+    .contenedor-header header ul{
+        display: flex;
+        list-style: none;
+    }
+
+        .contenedor-header header nav ul li a{
+            text-align: none;
+            color: brown;
+            font-weight: bold;
+            margin: 0 15px;
+            padding: 3px;
+            transition: .5s;
+            text-decoration: none;
+        }
+            .contenedor-header header nav ul li a:hover{
+                color: darkgoldenrod;
+            }
+
+.nav-responsive{
+    background-color: #000;
+    color:#fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.redes{
+    width: 50px;
+}
+
+.titulo{
+    font-size: xx-large;
+    font-family: 'Ultra', serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0px 25px 0px;
+    color: brown;
+}
+
+.texto p{
+    text-align: justify;
+}
+
+.imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen img{
+    border: 0.4em solid;/*grosor del borde*/
+    border-color: #ffe799;/*color de borde*/
+    border-radius: 1em / 0.5em;/*borde*/
+    -webkit-box-shadow: 12px 17px 5px 0px rgba(0,0,0,0.75);/*sombra*/
+    -moz-box-shadow: 12px 17px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 12px 17px 5px 0px rgba(0,0,0,0.75);
+}
+
+.list-group-item.active{
+    background-color: #ffe799;
+    border-color: #ffe799;
+    color: brown;
+    font-weight: bold;
+}
+
+
+
+#informacion {
+    display: flex;
+    width: 100%;
+    background-color: #ffe799;/*color de fondo*/
+    color: #000000;/*color de letra*/
+    border-top: solid #ffffff 2px;/*borde de arriba*/
+    margin: 1% 0%;
+    padding: 0.5% 0%;
+  }
+  
+  #informacion__titulo {
+    width: 100%;/*contenido al 100% dentro del contenedor*/
+    padding-bottom: 1%;/* espacio de abajo */
+    text-align: center;/*texto centrado*/
+    color: brown;/*color de texto*/
+    font: 2em Arial, Helvetica;/* tamaño de letra y etilo de letra */
+  }
+  
+  .informacion__texto {
+    font: 1em Arial, Helvetica;/* tamaño de letra y etilo de letra */
+  }
+  
+    .informacion__texto ul {
+        padding: 0% 3%;
+        list-style: none;/*no tiene propiedad de lista por el none*/
+    }
+  
+        .informacion__texto ul>li {
+            padding: 1.5% 0%;
+            border-bottom: dashed #ffffff 1px;/*borde de abajo*/
+            text-align: initial;
+        }
+  
+  .informacion__texto a {
+    color: #ffe799;/* color de texto */
+  }
+  
+#informacion__autor {
+width: 100%;
+text-align: center;
+font-size: 100%;
+}
+
+@media screen and (max-width:992px){
+
+    .texto p{
+        font-size:medium;
+    }
+
+    .imagen img{
+        width: 235px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .texto {
+        width: 100%;
+    }
+
+    .imagen {
+        width: 100%;
+        text-align: center;
+    }
+
+    .imagen img{
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .texto p{
+        font-size: small;
+    }
+
+    .imagen img{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:700px){
+
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #ffe799;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+    
+}
+
+@media screen and (max-width:546px){
+
+    .evento__navegador{
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+        padding-bottom: 20px;
+    }
+    .evento__texto{
+        width: 100%;
+    }
+
+    .informacion__texto{
+        font-size:small;
+    }
+}
+
+@media screen and (max-width:355px){
+    .redes{
+        width: 30px;
+    }
+    
+    .titulo, #informacion__titulo{
+        font-size: x-large;
+    }
+
+    .imagen img{
+        width: 250px;
+    }
+
+}
+
+@media screen and (max-width:300px){
+    .imagen img{
+        width: 200px;
+    }
+}

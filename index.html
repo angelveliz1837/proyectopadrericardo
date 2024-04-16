@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <title>Padre Ricardo</title>
+  <link rel="stylesheet" href="css/estilo.css" />
+</head>
+
+<body>
+  <div class="contenedor-header">
+    <header class="hstack gap-3">
+      <!--Logo-->
+      <div class="p-2 logo"><img src="img/logo.png"></div>
+      <!--Navegador-->
+      <nav id="nav">
+        <ul>
+          <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+          <li><a href="#mensaje" onclick="seleccionar()">MENSAJE</a></li>
+          <li><a href="#evento" onclick="seleccionar()">EVENTO</a></li>
+          <li><a href="#donativo" onclick="seleccionar()">DONATIVO</a></li>
+        </ul>
+      </nav>
+      <!--Redes-->
+      <div class="p-2 ms-auto redes">
+        <a href="https://web.facebook.com/victorricardo.cordovavelasquez.9" target="_blank">
+          <i class="fa-brands fa-facebook fa-2xl" style="color: #000;"></i>
+        </a>
+      </div>
+      <div class="p-2 redes">
+        <a aria-label="Chat on WhatsApp" href="https://wa.me/51998720312" target="_blank">
+          <i class="fa-brands fa-whatsapp fa-2xl" style="color: #000;"></i>
+        </a>
+      </div>
+      <div class="nav-responsive redes" onclick="mostrarOcultarMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+  </div>
+
+  <!--Contenido-->
+  <section class="container">
+    <!--Presentacion-->
+    <div class="row" id="inicio">
+      <h1 class="titulo">PRESENTACIÓN</h1>
+      <div class="col-8 texto">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur,
+          illum. Dolor nisi voluptatem eius tempore praesentium omnis commodi itaque,
+          numquam nostrum autem placeat totam sequi alias ut rem cupiditate illum!
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur,
+          illum. Dolor nisi voluptatem eius tempore praesentium omnis commodi itaque,
+          numquam nostrum autem placeat totam sequi alias ut rem cupiditate illum!
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur,
+          illum. Dolor nisi voluptatem eius tempore praesentium omnis commodi itaque,
+          numquam nostrum autem placeat totam sequi alias ut rem cupiditate illum!
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur,
+          illum. Dolor nisi voluptatem eius tempore praesentium omnis commodi itaque,
+          numquam nostrum autem placeat totam sequi alias ut rem cupiditate illum!
+        </p>
+      </div>
+      <div class="col-4 imagen">
+        <img src="img/presentacion.jpg" alt="presentacion">
+      </div>
+    </div>
+    <br>
+    <!--Mensaje-->
+    <div class="row" id="mensaje">
+      <h1 class="titulo">MENSAJE</h1>
+      <div class="col-8 texto">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur,
+          illum. Dolor nisi voluptatem eius tempore praesentium omnis commodi itaque,
+          numquam nostrum autem placeat totam sequi alias ut rem cupiditate illum!
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur,
+          illum. Dolor nisi voluptatem eius tempore praesentium omnis commodi itaque,
+          numquam nostrum autem placeat totam sequi alias ut rem cupiditate illum!
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur,
+          illum. Dolor nisi voluptatem eius tempore praesentium omnis commodi itaque,
+          numquam nostrum autem placeat totam sequi alias ut rem cupiditate illum!
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur,
+          illum. Dolor nisi voluptatem eius tempore praesentium omnis commodi itaque,
+          numquam nostrum autem placeat totam sequi alias ut rem cupiditate illum!
+        </p>
+      </div>
+      <div class="col-4 imagen">
+        <img src="img/mensaje.jpg">
+      </div>
+    </div>
+    <br>
+    <!--Eventos-->
+    <div class="row" id="evento">
+      <h1 class="titulo">EVENTOS</h1>
+      <div class="col-4 evento__navegador">
+        <div class="list-group" id="list-tab" role="tablist">
+          <a class="list-group-item list-group-item-action active" id="list-evento1-list" data-bs-toggle="list"
+            href="#list-evento1" role="tab" aria-controls="list-evento1">MISA</a>
+          <a class="list-group-item list-group-item-action" id="list-evento2-list" data-bs-toggle="list"
+            href="#list-evento2" role="tab" aria-controls="list-evento2">BAUTIZO</a>
+          <a class="list-group-item list-group-item-action" id="list-evento3-list" data-bs-toggle="list"
+            href="#list-evento3" role="tab" aria-controls="list-evento3">MATRIMONIO</a>
+        </div>
+      </div>
+      <div class="col-8 evento__texto">
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active texto" id="list-evento1" role="tabpanel"
+            aria-labelledby="list-evento1-list">
+            <p>La misa es un acto litúrgico central en la tradición cristiana, especialmente en la
+              Iglesia Católica. Es una ceremonia religiosa en la que los fieles se congregan para conmemorar y celebrar
+              el sacrificio de Jesucristo en la cruz, tal como está descrito en la Biblia. Durante la misa, se leen
+              pasajes bíblicos, se ofrecen oraciones y se llevan a cabo rituales sagrados que incluyen la consagración
+              del pan y del vino, que se consideran la verdadera presencia de Cristo. La misa tiene como objetivo
+              principal la adoración a Dios y la renovación espiritual de los fieles.</p>
+            <div class="imagen">
+              <img src="img/misa.jpg">
+            </div>
+          </div>
+          <div class="tab-pane fade texto" id="list-evento2" role="tabpanel" aria-labelledby="list-evento2-list">
+            <p>El bautizo es un sacramento cristiano que simboliza la purificación espiritual y la
+              iniciación en la fe cristiana. En la Iglesia Católica, el bautizo se realiza generalmente a los pocos
+              meses de nacer, aunque también puede ser administrado en edades más avanzadas a aquellos que no han sido
+              bautizados. Durante la ceremonia, el agua bendita es derramada sobre la cabeza del individuo, simbolizando
+              el lavado de los pecados y la recepción del Espíritu Santo. Los padrinos, que son personas elegidas por
+              los padres del niño o por el adulto que se bautiza, tienen la responsabilidad de guiar espiritualmente
+              al bautizado en su vida cristiana.</p>
+            <div class="imagen">
+              <img src="img/bautizo.jpg">
+            </div>
+          </div>
+          <div class="tab-pane fade texto" id="list-evento3" role="tabpanel" aria-labelledby="list-evento3-list">
+            <p>El matrimonio es una unión legal y/o religiosa entre dos personas que establece un vínculo
+              conyugal, con derechos y obligaciones tanto legales como morales. En muchas culturas y religiones,
+              el matrimonio se considera un compromiso sagrado y una institución fundamental para la formación de la
+              familia. Es un acto mediante el cual dos personas se comprometen a compartir sus vidas, sus bienes y sus
+              responsabilidades. En el contexto cristiano, el matrimonio es considerado un sacramento que une a la
+              pareja
+              ante Dios y la comunidad, y se celebra con una ceremonia en la que los contrayentes intercambian votos y
+              anillos. Los esposos se prometen amor, fidelidad y apoyo mutuo en todas las circunstancias de la vida.</p>
+            <div class="imagen">
+              <img src="img/matrimonio.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <!--Donativos-->
+    <div id="donativo">
+      <h1 class="titulo">DONATIVOS</h1>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="img/donativo1.jpg" class="card-img-top" alt="...">
+            <div class="card-body texto">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="img/donativo2.jpg" class="card-img-top" alt="...">
+            <div class="card-body texto">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="img/donativo3.jpg" class="card-img-top" alt="...">
+            <div class="card-body texto">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Footer-->
+  <footer id="informacion">
+    <div class="container">
+      <div class="row">
+        <div id="informacion__titulo" class="col-md-12">
+          <b>INFORMACIÓN</b>
+        </div>
+        <div class="col-md-6 informacion__texto">
+          <ul>
+            <li>
+              <i class="fa-sharp fa-solid fa-location-dot"></i>
+              <strong>Oficina:</strong> AV. BRASIL N°. 2212 - 2218 PUEBLO LIBRE - LIMA - PERU
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <strong>Teléfono:</strong> 235-0796
+            </li>
+            <li>
+              <i class="fa-solid fa-mobile-screen"></i>
+              <strong>Celular:</strong> +51 998 720 312
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <strong>Correo:</strong> ricardo1622@hotmail.com
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6 informacion__texto">
+          <ul>
+            <li>
+              <i class="fa-solid fa-clock"></i>
+              <strong>Horario de Atención:</strong>
+              <br>
+              <br>Lunes a Viernes de 9:00 am a 6:00 pm
+              <br>Sábados de 9:00 am a 2:00pm
+            </li>
+            <li>
+              <i class="fa-solid fa-people-group"></i>
+              <strong>Visítanos:</strong>
+              <br><br>
+              <a style="padding: 2em 1em 3em 2em;" href="https://web.facebook.com/victorricardo.cordovavelasquez.9" target="_blank">
+                <i class="fa-brands fa-facebook fa-2xl" style="color: #000;"></i>
+              </a>
+              <a aria-label="Chat on WhatsApp" href="https://wa.me/51998720312" target="_blank">
+                <i class="fa-brands fa-whatsapp fa-2xl" style="color: #000;"></i>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+        <div id="informacion__autor" class="col-md-12">
+          <div>
+            <center><b>© Copyright 2024 - Angel Veliz</b></center>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>
