@@ -7,9 +7,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-  <title>Padre Ricardo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <title>Iglesia Católica Oriental</title>
   <link rel="stylesheet" href="css/estilo.css" />
 </head>
 
@@ -19,13 +22,16 @@
       <!--Logo-->
       <div class="p-2 logo"><img src="img/logo.png"></div>
       <!--Navegador-->
-      <nav id="nav">
+      <nav class="navegador" id="nav">
         <ul>
           <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-          <li><a href="#mensaje" onclick="seleccionar()">MENSAJE</a></li>
-          <li><a href="#sacramento" onclick="seleccionar()">SACRAMENTO</a></li>
-          <li><a href="#donativo" onclick="seleccionar()">DONATIVO</a></li>
-          <li><a href="#pregunta" onclick="seleccionar()">PREGUNTAS FRECUENTES</a></li>
+          <li><a href="#historia" onclick="seleccionar()">HISTORIA</a></li>
+          <li><a href="#funcion" onclick="seleccionar()">FUNCIONES</a></li>
+          <li><a href="#formacion" onclick="seleccionar()">FORMACIÓN</a></li>
+          <li><a href="#sacramento" onclick="seleccionar()">SACRAMENTOS</a></li>
+          <li><a href="#mision" onclick="seleccionar()">MISIONES</a></li>
+          <li><a href="#donacion" onclick="seleccionar()">DONACIONES</a></li>
+          <li><a href="#pregunta" onclick="seleccionar()">PREGUNTAS</a></li>
         </ul>
       </nav>
       <!--Redes-->
@@ -49,106 +55,286 @@
   <section class="container">
     <!--Presentacion-->
     <div class="row" id="inicio">
-      <h1 class="titulo">PRESENTACIÓN</h1>
-      <div class="col-8 texto">
+      <h1 class="titulo">MISIÓN</h1>
+      <div class="col-10 texto">
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur,
-          illum. Dolor nisi voluptatem eius tempore praesentium omnis commodi itaque,
-          numquam nostrum autem placeat totam sequi alias ut rem cupiditate illum!
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur,
-          illum. Dolor nisi voluptatem eius tempore praesentium omnis commodi itaque,
-          numquam nostrum autem placeat totam sequi alias ut rem cupiditate illum!
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur,
-          illum. Dolor nisi voluptatem eius tempore praesentium omnis commodi itaque,
-          numquam nostrum autem placeat totam sequi alias ut rem cupiditate illum!
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur,
           illum. Dolor nisi voluptatem eius tempore praesentium omnis commodi itaque,
           numquam nostrum autem placeat totam sequi alias ut rem cupiditate illum!
         </p>
       </div>
-      <div class="col-4 imagen">
-        <img src="img/presentacion.jpg" alt="presentacion">
+      <div class="col-2 imagen">
+        <img src="img/mision.jpg" alt="presentacion">
+      </div>
+      <br>
+      <h1 class="titulo">VISIÓN</h1>
+      <div class="col-10 texto">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur,
+          illum. Dolor nisi voluptatem eius tempore praesentium omnis commodi itaque,
+          numquam nostrum autem placeat totam sequi alias ut rem cupiditate illum!
+        </p>
+      </div>
+      <div class="col-2 imagen">
+        <img src="img/vision.jpg" alt="presentacion">
+      </div>
+      <br>
+      <h1 class="titulo">LEMA</h1>
+      <div class="col-10 texto">
+        <p>Nuestra iglesia es Sacramental y Evangelizadora
+        </p>
+      </div>
+      <div class="col-2 imagen">
+        <img src="img/lema.jpg" alt="presentacion">
       </div>
     </div>
     <br>
-    <!--Mensaje-->
-    <div class="row" id="mensaje">
-      <h1 class="titulo">MENSAJE</h1>
-      <div class="col-8 texto">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur,
-          illum. Dolor nisi voluptatem eius tempore praesentium omnis commodi itaque,
-          numquam nostrum autem placeat totam sequi alias ut rem cupiditate illum!
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur,
-          illum. Dolor nisi voluptatem eius tempore praesentium omnis commodi itaque,
-          numquam nostrum autem placeat totam sequi alias ut rem cupiditate illum!
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur,
-          illum. Dolor nisi voluptatem eius tempore praesentium omnis commodi itaque,
-          numquam nostrum autem placeat totam sequi alias ut rem cupiditate illum!
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur,
-          illum. Dolor nisi voluptatem eius tempore praesentium omnis commodi itaque,
-          numquam nostrum autem placeat totam sequi alias ut rem cupiditate illum!
+    <!--Historia-->
+    <div id="historia">
+      <h1 class="titulo">HISTORIA</h1>
+      <div class="clearfix historia__imagen historia__texto">
+        <img src="img/mensaje.jpg" class="col-md-4 float-md-end mb-3 ms-md-3" alt="...">
+        <p>
+          Nuestra iglesia autónoma es de la sucesión de la Iglesia Asiria del Oriente, cuya Patriarca es Su Santidad
+          Mar Awa III y nuestra Iglesia Madre es la de la India.
+        </p>
+        <p>
+          El Metropolitano de la India, Mar Basilios consagró en su Catedral de la Epifanía en Pallithanam, Madurai,
+          India en 1902 a Mar Jacobus como el Metropolitano para el Occidente. Estamos en plena intercomunión con
+          nuestra Iglesia Madre. La Iglesia en la India se conoce como La Iglesia Siro-Caldea y también como la Iglesia
+          de los Cristianos de Mar Tomás, porque fue fundada en Kerala, India del Sur por Mar Addai y Mar Tomas
+          (Los Apósteles: San Judas Tadeo y Santo Tomás) en el año DC. 52.
+        </p>
+        <p>
+          Juan Pablo II confirmó una Declaración conjunta sobre la Cristología con Su Santidad Mar Dinka IV en Roma
+          en 1994. Aunque nuestra Iglesia jamás ha sido una dependencia de Roma, nos hemos comprometido como Iglesia
+          fundada por los mismos Apósteles a fomentar las interrelaciones ecuménicas con vuestra Iglesia Católica
+          Romana.
+        </p>
+        <p>
+          Nuestra Iglesia Oriental ha sido llamada "la Iglesia en llamas" por su celo misionero. Ha llegado hacer la
+          presencia mas significativa en la India, China, Medio Oriente antes de la llegada del emperador musulmán
+          Tamerlane en el s. XIV. Desde aquel periodo nuestra Iglesia es con mucha frecuencia, una Iglesia de mártires
+          en el Medio Oriente y en la India.
+        </p>
+        <p>
+          Estamos presente en el Perú desde año 2005 y se establece legalmente nuestra Iglesia Católica Oriental desde
+          abril de 2006 <strong>con la aprobación de las autoridades peruanas con Partida Registral Nro 11188869,
+            inscrita en el Ministerio de Justicia y Derechos Humanos.</strong>
         </p>
       </div>
-      <div class="col-4 imagen">
-        <img src="img/mensaje.jpg">
+      <div class="boton">
+        <a href="html/historia.html">Más Información</a>
+      </div>
+    </div>
+    <br>
+    <!--Funciones-->
+    <div class="row" id="funcion">
+      <h1 class="titulo">FUNCIONES MINISTERIALES</h1>
+      <ol>
+        <li class="subtitulo">Funciones de Obispo</li>
+        <div class="historia__texto">
+          <ul>
+            <li>Un obispo es un fiel que supervisa a los pastores y sacerdotes en un territorio determinado.
+              Para las iglesias: católica, ortodoxa, comunión anglicana y luteranas, coinciden en decir que la
+              sucesión apostólica es adjudicada bajo la ordenación del obispo, desde la existencia de los apóstoles
+              hasta nuestros días.</li>
+            <li>Para el caso de la Iglesia Católica, un obispo es un bautizado o más bien un sacerdote que recibe
+              el sacramento de orden sacerdotal de manera formal en su grado mayor, el cual corresponde al episcopado.
+              </p>
+              <p>En tal sentido, se considera que el obispo es el miembro de la Iglesia que posee la máxima plenitud
+                sacerdotal y ministerial, por tanto, es considerado, desde esta perspectiva, como un sucesor de los
+                apóstoles y pastor encargado, el cual gobierna una diócesis.
+            </li>
+            <li>Además, puede compartir con el Papa y demás obispos una responsabilidad sobre toda la iglesia.</p>
+              <p>El significado etimológico de esta palabra -obispo- es aquel quien se encarga del control y vigilancia
+                de un territorio o diócesis, a través del cual se da cumplimiento a las diversas leyes expresadas desde
+                el catolicismo o desde el derecho canónico.
+            </li>
+            <li>En virtud de lo que representa un obispo, tienen la posibilidad de mostrar ante los feligreses y
+              público general atavíos en los que destacan colores como el violeta, un anillo y una cruz.</li>
+            <li>Vale destacar que, el Papa es quien posee la mayor cantidad de fuerza concentrada para la consolidación
+              del poder eclesiástico, otro modo que conserva dicha acción es a través del nombramiento de obispos,
+              quienes gobiernan un territorio que, para la Iglesia Católica, representa una diócesis.</li>
+            <li>Tanto el Obispo como los Papas, son los representantes responsables de la Iglesia desde una parroquia
+              hasta una región.</li>
+          </ul>
+        </div>
+        <li class="subtitulo">Funciones Sacerdotales</li>
+        <div class="texto">
+          <ul>
+            <li>El es que puede dar la misa, así como dar las cosas que se ofrecen a dios, como la eucaristía.</li>
+            <li>Su principal función es enseñar la palabra de dios.</li>
+            <li>Ayudar al afligido y convertir al incrédulo.</li>
+            <li>Dar testimonio de fe, abrir y cambiar el corazón de impuro.</li>
+            <li>Confesar y dar la comunión al prójimo.</li>
+            <li>Enseñar los mandamientos y los sacramentos.</li>
+            <li>Inculcar a nuestra vida el amor de dios mediante su sabiduría.</li>
+            <li>Dar ceremonias especiales, como acontecimientos cristianos.</li>
+          </ul>
+        </div>
+        <li class="subtitulo">Funciones Diacano</li>
+        <div class="texto">
+          <ul>
+            <li>Colaborar en los servicios y las reuniones. Los diáconos son generalmente los responsables de dar
+              la bienvenida a los miembros y a los visitantes, y de ayudar, cuando sea preciso, a que todos los
+              asistentes encuentren asiento. También cooperan con el pastor y los ancianos con el fin de que las
+              reuniones llevadas a cabo en la iglesia se desarrollen sin contratiempos.</li>
+            <li>Visitar a los miembros. En muchas iglesias, la visitación se organiza agrupando a los miembros por
+              zonas y asignando una a cada diácono, con el objetivo de que cada hogar sea visitado al menos una vez
+              al trimestre.</li>
+            <li>Colaborar en los servicios bautismales. Los diáconos se ocupan de los preparativos necesarios para
+              la ceremonia bautismal </li>
+            <li>Colaborar en el servicio de comunión. En la ceremonia del lavamiento de los pies, los diáconos y las
+              diaconisas facilitan todo lo necesario: toallas, palanganas (jofainas o lebrillos), agua y baldes.
+              Después del servicio, se ocupan de que los recipientes y las toallas sean lavados y debidamente guardados.
+              Después de la Cena del Señor, los diáconos y las diaconisas han de ejercer mucho cuidado en cuanto al
+              destino dado a cualquier resto del pan o el vino que haya sobrado, que deberá ser desechado con el
+              debido respeto.</li>
+            <li>Atender a los enfermos, a los pobres y a los necesitados. Los diáconos y las diaconisas tienen la
+              misión de atender a los enfermos, a los pobres y a los necesitados, y han de mantener a la iglesia
+              informada de sus necesidades y recabar el auxilio de los miembros. El dinero necesario provendrá del
+              fondo de pobres y necesitados de la iglesia local. El tesorero, por acuerdo de la junta directiva,
+              entregará a los diáconos, o a las diaconisas, los recursos que se requieran para los casos de necesidad.
+            </li>
+            <li>Cuidar y mantener las propiedades de la iglesia. En las congregaciones donde el cuidado y
+              mantenimiento de las propiedades de la iglesia no hayan sido asignados a una comisión de mantenimiento,
+              los diáconos y las diaconisas asumirán dichas responsabilidades</li>
+          </ul>
+        </div>
+        <li class="subtitulo">Funciones Diaconisa</li>
+        <div class="texto">
+          <ul>
+            <li>Saludar y visitar a los visitantes y a los miembros. En muchas iglesias, las diaconisas colaboran en
+              el saludo a los visitantes y a los miembros en las reuniones y en la visitación de sus hogares cuando
+              ellos no pueden asistir a los cultos.</li>
+            <li>Colaborar en las ceremonias bautismales. Las diaconisas atienden a las damas que se van a bautizar,
+              antes y después de la ceremonia. También
+              aconsejan y ayudan, en lo concerniente a la vestimenta adecuada para el bautismo. Debe disponerse
+              de túnicas bautismales de tejidos adecuados. Cuando se usen túnicas, las diaconisas deben encargarse
+              de que sean lavadas y debidamente guardadas</li>
+            <li>Colaborar en el servicio de comunión. Las diaconisas y los diáconos disponen todo lo necesario para
+              este servicio y se ocupan de que, una vez terminado, todo quede ordenado.
+              Antes de que comience el servicio de comunión, las diaconisas preparan la mesa de la comunión,
+              incluyendo la preparación del pan y el vino, poniendo la mesa del rito, echando el vino, colocando los
+              platos con los panes sin levadura y cubriendo la mesa con el mantel previsto para ese fin.
+              Las diaconisas colaboran en la ceremonia del lavamiento de los pies, auxiliando de manera especial a
+              las damas visitantes y a los nuevos miembros de iglesia.</li>
+            <li>Atender a los enfermos y a los necesitados. Las diaconisas ayudan a los diáconos en el cuidado de
+              los enfermos, los pobres y los necesitados</li>
+            <li>Cuidar y mantener las propiedades de la iglesia. En las congregaciones donde el cuidado y
+              mantenimiento de las propiedades de la iglesia no hayan sido asignados a una comisión de bienes
+              inmuebles, los diáconos y las diaconisas asumirán dichas responsabilidades</li>
+          </ul>
+        </div>
+      </ol>
+    </div>
+    <br>
+    <!--Formacion-->
+    <div class="row" id="formacion">
+      <h1 class="titulo">FORMACIÓN SEMINARISTA</h1>
+      <h2 class="subtitulo">EL PROPEDÉUTICO</h2>
+      <div class="historia__texto">
+        <p>El año del propedéutico es a la vez un año de reflexión y un año de formación humana, espiritual y 
+          doctrinal. Los candidatos tienen a su alcance los medios para ver mejor y discernir la llamada a ser 
+          sacerdote. Todavía no son seminaristas, y cual sea la continuación de su trayectoria, aprovechan de este 
+          año para desarrollar su formación cristiana de base, con un compromiso mas determinado hacia la santidad.</p>
+          <p>
+          El encuentro con Cristo es el punto más importante de este primer año de formación. Las palabras de Benito 
+          XVI definen bien este espíritu: «solamente experimentando personalmente en encuentro con Cristo, que un 
+          joven puede entender de verdad su voluntad y asi su propia vocación. Mas conoces a Jesús y mas su misterio 
+          te atrae, mas le conoces mas te dan ganas de buscarle. Es un movimiento del espíritu que dura toda tu vida, 
+          y que encuentra en el seminario un momento de vida lleno de promesas.»
+        </p>
+      </div>
+      <h2 class="subtitulo">EL PRIMER CICLO : poner las bases de una vida sacerdotal</h2>
+      <div class="historia__texto">
+        <p>El primer ciclo prolonga el año propedéutico vivido en Ars. El discernimiento se intensifica y el 
+          seminarista se construye, tanto en un plan humano como espiritual y intelectual. La filosofía es una 
+          parte importante para formar la inteligencia. Se ofrecen Varias asignaturas en el Seminario internacional 
+          de Ars: la escritura santa, la teología fundamental y moral, la historia de la iglesia,  la patrología, 
+          la liturgia, y la espiritualidad.</p>
+      </div>
+      <h2 class="subtitulo">EL SEGUNDO CICLO : prepara al Ministerio de sacerdote</h2>
+      <div class="historia__texto">
+        <p>3 años duran el segundo ciclo, el cual esta mas centrado sobre la formación teológica y pastoral en 
+          todas las dimensiones: bíblica, dogmática, moral, litúrgica, espiritual, histórica, y canónica. 
+          Es una preparación más inmediata al ministerio presbiteral diocesano.</p>
+        <p>Antes de ser ordenado sacerdote, el diacono vive un año de practica en una parroquia. Vuelve una semana 
+          al mes al seminario internacional de Ars para compartir y profundizar sus primeras experiencias pastorales. 
+          Estos Tiempos des practicas pueden hacerse durante la formación.</p>
       </div>
     </div>
     <br>
     <!--Sacramentos-->
     <div class="row" id="sacramento">
-      <h1 class="titulo">SACRAMENTOS</h1>
+      <h1 class="titulo">EVANGELIZACIÓN Y SACRAMENTOS</h1>
       <div class="col-4 evento__navegador">
         <div class="list-group" id="list-tab" role="tablist">
           <a class="list-group-item list-group-item-action active" id="list-evento1-list" data-bs-toggle="list"
-            href="#list-evento1" role="tab" aria-controls="list-evento1">BAUTIZO</a>
+            href="#list-evento1" role="tab" aria-controls="list-evento1">BAUTISMO</a>
           <a class="list-group-item list-group-item-action" id="list-evento2-list" data-bs-toggle="list"
-            href="#list-evento2" role="tab" aria-controls="list-evento2">PRIMERA COMUNIÓN</a>
+            href="#list-evento2" role="tab" aria-controls="list-evento2">RECONCILIACIÓN</a>
           <a class="list-group-item list-group-item-action" id="list-evento3-list" data-bs-toggle="list"
-            href="#list-evento3" role="tab" aria-controls="list-evento3">CONFIRMACIÓN</a>
+            href="#list-evento3" role="tab" aria-controls="list-evento3">EUCARISTÍA</a>
           <a class="list-group-item list-group-item-action" id="list-evento4-list" data-bs-toggle="list"
-            href="#list-evento4" role="tab" aria-controls="list-evento4">CONFESIÓN</a>
+            href="#list-evento4" role="tab" aria-controls="list-evento4">CONFIRMACIÓN</a>
           <a class="list-group-item list-group-item-action" id="list-evento5-list" data-bs-toggle="list"
-            href="#list-evento5" role="tab" aria-controls="list-evento5">MATRIMONIO</a>
+            href="#list-evento5" role="tab" aria-controls="list-evento5">UNCIÓN DE LOS ENFERMOS</a>
           <a class="list-group-item list-group-item-action" id="list-evento6-list" data-bs-toggle="list"
-            href="#list-evento6" role="tab" aria-controls="list-evento6">UNCIÓN DE LOS ENFERMOS</a>
+            href="#list-evento6" role="tab" aria-controls="list-evento6">ORDEN SACERDOTAL</a>
+          <a class="list-group-item list-group-item-action" id="list-evento7-list" data-bs-toggle="list"
+            href="#list-evento7" role="tab" aria-controls="list-evento7">ORDEN SACERDOTAL</a>
         </div>
       </div>
       <div class="col-8 evento__texto">
         <div class="tab-content" id="nav-tabContent">
-          <div class="tab-pane fade show active texto" id="list-evento1" role="tabpanel"
+          <div class="tab-pane fade show active texto__sacramento" id="list-evento1" role="tabpanel"
             aria-labelledby="list-evento1-list">
             <p>Bautizo de niños y niñas de hasta 7 años de edad.</p>
             <div class="imagen">
               <img src="img/bautizo.jpg">
             </div>
           </div>
-          <div class="tab-pane fade texto" id="list-evento2" role="tabpanel" aria-labelledby="list-evento2-list">
+          <div class="tab-pane fade texto__sacramento" id="list-evento2" role="tabpanel"
+            aria-labelledby="list-evento2-list">
             <p>Este sacramento está dirigido a niñas y niños de 9 a 11 años.</p>
             <div class="imagen">
               <img src="img/primeracomunion.jpg">
             </div>
           </div>
-          <div class="tab-pane fade texto" id="list-evento3" role="tabpanel" aria-labelledby="list-evento3-list">
-            <p>Para jóvenes de ambos sexos entre 15 y 17 años de edad o que se encuentran cursando el 4to. o 5to. 
+          <div class="tab-pane fade texto__sacramento" id="list-evento3" role="tabpanel"
+            aria-labelledby="list-evento3-list">
+            <p>Para jóvenes de ambos sexos entre 15 y 17 años de edad o que se encuentran cursando el 4to. o 5to.
               año de secundaria. Confirmación para adultos, mayores de 18 años de edad.</p>
             <div class="imagen">
               <img src="img/confirmacion.jpg">
             </div>
           </div>
-          <div class="tab-pane fade texto" id="list-evento4" role="tabpanel" aria-labelledby="list-evento4-list">
-            <p>El sacramento de la reconciliación, también llamado confesión o penitencia, nos concede el perdón y 
+          <div class="tab-pane fade texto__sacramento" id="list-evento4" role="tabpanel"
+            aria-labelledby="list-evento4-list">
+            <p>El sacramento de la reconciliación, también llamado confesión o penitencia, nos concede el perdón y
               la sanación que necesitamos.</p>
             <div class="imagen">
               <img src="img/confesion.jpg">
             </div>
           </div>
-          <div class="tab-pane fade texto" id="list-evento5" role="tabpanel" aria-labelledby="list-evento5-list">
+          <div class="tab-pane fade texto__sacramento" id="list-evento5" role="tabpanel"
+            aria-labelledby="list-evento5-list">
             <p>Requisitos para toda pareja que desee contraer matrimonio en la iglesia Nuestra Señora de Fátima.</p>
             <div class="imagen">
               <img src="img/matrimonio.jpg">
             </div>
           </div>
-          <div class="tab-pane fade texto" id="list-evento6" role="tabpanel" aria-labelledby="list-evento6-list">
-            <p>Para solicitar que le sea impartida la unción a algún enfermo que vive dentro de nuestra jurisdicción, 
+          <div class="tab-pane fade texto__sacramento" id="list-evento6" role="tabpanel"
+            aria-labelledby="list-evento6-list">
+            <p>Para solicitar que le sea impartida la unción a algún enfermo que vive dentro de nuestra jurisdicción,
+              deberá llamar al despacho parroquial.</p>
+            <div class="imagen">
+              <img src="img/unciondelosenfermos.jpg">
+            </div>
+          </div>
+          <div class="tab-pane fade texto__sacramento" id="list-evento7" role="tabpanel"
+            aria-labelledby="list-evento7-list">
+            <p>Para solicitar que le sea impartida la unción a algún enfermo que vive dentro de nuestra jurisdicción,
               deberá llamar al despacho parroquial.</p>
             <div class="imagen">
               <img src="img/unciondelosenfermos.jpg">
@@ -158,14 +344,40 @@
       </div>
     </div>
     <br>
+    <!--Misiones-->
+    <div class="row" id="mision">
+      <h1 class="titulo">MISIONES PASTORALES</h1>
+      <div class="col-6 texto__mision">
+        <ul>
+          <li>Obispos de Lima - Chile</li>
+          <li>Obispos de Lima - Ecuador</li>
+          <li>San Juan de Lurigancho</li>
+          <li>San Martin de Porres</li>
+          <li>Cercado de Lima</li>
+          <li>Los Olivos</li>
+        </ul>
+      </div>
+      <div class="col-6 texto__mision">
+        <ul>
+          <li>Miraflores</li>
+          <li>San Isidro</li>
+          <li>Villa Maria del Triunfo</li>
+          <li>Chorrillos</li>
+          <li>Barranco</li>
+          <li>Comas</li>
+          <li>Callao</li>
+        </ul>
+      </div>
+    </div>
+    <br>
     <!--Donativos-->
-    <div id="donativo">
+    <div id="donacion">
       <h1 class="titulo">DONATIVOS</h1>
       <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
           <div class="card">
             <img src="img/donativo1.jpg" class="card-img-top" alt="...">
-            <div class="card-body texto">
+            <div class="card-body texto__donativo">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
                 content. This content is a little bit longer.</p>
@@ -175,7 +387,7 @@
         <div class="col">
           <div class="card">
             <img src="img/donativo2.jpg" class="card-img-top" alt="...">
-            <div class="card-body texto">
+            <div class="card-body texto__donativo">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
                 content. This content is a little bit longer.</p>
@@ -185,7 +397,7 @@
         <div class="col">
           <div class="card">
             <img src="img/donativo3.jpg" class="card-img-top" alt="...">
-            <div class="card-body texto">
+            <div class="card-body texto__donativo">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
                 content.</p>
@@ -200,14 +412,16 @@
       <div class="accordion" id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button subtitulo__pregunta" type="button" data-bs-toggle="collapse" data-bs-target="#preguntaUnoHorario" aria-expanded="true" aria-controls="preguntaUnoHorario">
+            <button class="accordion-button subtitulo__pregunta" type="button" data-bs-toggle="collapse"
+              data-bs-target="#preguntaUnoHorario" aria-expanded="true" aria-controls="preguntaUnoHorario">
               ¿Cuál es el horario de atención en el despacho parroquial?
             </button>
           </h2>
           <div id="preguntaUnoHorario" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              De lunes a viernes de 8 a 1 de la tarde y de 2 p.m. a 4 p.m. Este mismo horario rige para las consultas 
-              por whatsapp.</div>
+            <div class="accordion-body texto__rpta_pregunta">
+              <p>De lunes a viernes de 8 a 1 de la tarde y de 2 p.m. a 4 p.m. Este mismo horario rige para las consultas
+                por whatsapp.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -216,71 +430,86 @@
       <div class="accordion" id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button subtitulo__pregunta" type="button" data-bs-toggle="collapse" data-bs-target="#preguntaUnoMisa" aria-expanded="true" aria-controls="preguntaUnoMisa">
+            <button class="accordion-button subtitulo__pregunta" type="button" data-bs-toggle="collapse"
+              data-bs-target="#preguntaUnoMisa" aria-expanded="true" aria-controls="preguntaUnoMisa">
               ¿Celebran misas presenciales y virtuales?, ¿cuál es el trámite para solicitarlas?
             </button>
           </h2>
           <div id="preguntaUnoMisa" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              Para solicitar intenciones en las misas comunitarias debe escribir un whatsapp a este número: 998 720 312
-              (llamar porque este servicio está habilitado para recibir llamadas), CON UN MÍNIMO DE 
-              TRES DÍAS DE ANTICIPACIÓN debido a la alta demanda. También se pueden reservar personalmente en el instituto 
-              IDEPT. No se atienden solicitudes a través de la web o de las redes sociales.</div>
+            <div class="accordion-body texto__rpta_pregunta">
+              <p>Para solicitar intenciones en las misas comunitarias debe escribir un whatsapp a este número: 998 720
+                312
+                (llamar porque este servicio está habilitado para recibir llamadas), CON UN MÍNIMO DE
+                TRES DÍAS DE ANTICIPACIÓN debido a la alta demanda. También se pueden reservar personalmente en el
+                instituto
+                IDEPT. No se atienden solicitudes a través de la web o de las redes sociales.</p>
+            </div>
           </div>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button collapsed subtitulo__pregunta" type="button" data-bs-toggle="collapse" data-bs-target="#preguntaDosMisa" aria-expanded="false" aria-controls="preguntaDosMisa">
+            <button class="accordion-button collapsed subtitulo__pregunta" type="button" data-bs-toggle="collapse"
+              data-bs-target="#preguntaDosMisa" aria-expanded="false" aria-controls="preguntaDosMisa">
               ¿Es posible separar una misa para los próximos meses?
             </button>
           </h2>
           <div id="preguntaDosMisa" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              Las misas se agendan solo para el mes en curso porque no sabemos los horarios que tendremos en los 
-              próximos meses. Es importante tomar en cuenta que los domingos no leemos intenciones en nuestras misas, 
-              solo de lunes a sábado.</div>
+            <div class="accordion-body texto__rpta_pregunta">
+              <p>Las misas se agendan solo para el mes en curso porque no sabemos los horarios que tendremos en los
+                próximos meses. Es importante tomar en cuenta que los domingos no leemos intenciones en nuestras misas,
+                solo de lunes a sábado.</p>
+            </div>
           </div>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button collapsed subtitulo__pregunta" type="button" data-bs-toggle="collapse" data-bs-target="#preguntaTresMisa" aria-expanded="false" aria-controls="preguntaTresMisa">
+            <button class="accordion-button collapsed subtitulo__pregunta" type="button" data-bs-toggle="collapse"
+              data-bs-target="#preguntaTresMisa" aria-expanded="false" aria-controls="preguntaTresMisa">
               ¿Cuánto cuesta la misa?
             </button>
           </h2>
           <div id="preguntaTresMisa" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              La misa tiene un costo de 100 nuevos soles, se puede recibir una colaboración voluntaria destinada a las 
-              obras de misericordia de nuestra parroquia.</div>
+            <div class="accordion-body texto__rpta_pregunta">
+              <p>La misa tiene un costo de 100 nuevos soles, se puede recibir una colaboración voluntaria destinada a
+                las
+                obras de misericordia de nuestra parroquia.</p>
+            </div>
           </div>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button collapsed subtitulo__pregunta" type="button" data-bs-toggle="collapse" data-bs-target="#preguntaCuatroMisa" aria-expanded="false" aria-controls="preguntaCuatroMisa">
+            <button class="accordion-button collapsed subtitulo__pregunta" type="button" data-bs-toggle="collapse"
+              data-bs-target="#preguntaCuatroMisa" aria-expanded="false" aria-controls="preguntaCuatroMisa">
               ¿Cómo puedo ver las misas virtuales?
             </button>
           </h2>
           <div id="preguntaCuatroMisa" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              Las misas virtuales se transmiten por nuestro canal de Facebook: Ricardo Cordova Velasquez.
-              Diez minutos antes de cada misa publicamos en el FB de la parroquia el enlace para la misa del día, 
-              pero también se puede ingresar directamente desde el 
-              link: https://web.facebook.com/victorricardo.cordovavelasquez.9
-              Las misas quedan grabadas allí para que las personas interesadas las puedan mirar cuando lo deseen o 
-              compartirlas enviando el enlace respectivo de cada misa.</div>
+            <div class="accordion-body texto__rpta_pregunta">
+              <p>Las misas virtuales se transmiten por nuestro canal de Facebook: Ricardo Cordova Velasquez.
+                Diez minutos antes de cada misa publicamos en el FB de la parroquia el enlace para la misa del día,
+                pero también se puede ingresar directamente desde el
+                link:
+                Las misas quedan grabadas allí para que las personas interesadas las puedan mirar cuando lo deseen o
+                compartirlas enviando el enlace respectivo de cada misa.</p>
+            </div>
           </div>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button collapsed subtitulo__pregunta" type="button" data-bs-toggle="collapse" data-bs-target="#preguntaCincoMisa" aria-expanded="false" aria-controls="preguntaCincoMisa">
+            <button class="accordion-button collapsed subtitulo__pregunta" type="button" data-bs-toggle="collapse"
+              data-bs-target="#preguntaCincoMisa" aria-expanded="false" aria-controls="preguntaCincoMisa">
               ¿Se pueden adquirir coronas de misa?
             </button>
           </h2>
           <div id="preguntaCincoMisa" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              Las coronas de misas de nuestra parroquia son por una sola vez. El sacerdote la reza a solas (por el alma 
-              del difunto), pero no sabemos el día ni la hora. Cuestan 25 soles y se adquieren en el despacho parroquial 
-              dentro del horario establecido.
-              Las personas que deseen coronas perpetuas, deben adquirirlas en "falta la dirección"</div>
+            <div class="accordion-body texto__rpta_pregunta">
+              <p>Las coronas de misas de nuestra parroquia son por una sola vez. El sacerdote la reza a solas (por el
+                alma
+                del difunto), pero no sabemos el día ni la hora. Cuestan 25 soles y se adquieren en el despacho
+                parroquial
+                dentro del horario establecido.
+                Las personas que deseen coronas perpetuas, deben adquirirlas en "falta la dirección"</p>
+            </div>
           </div>
         </div>
       </div>
@@ -289,39 +518,46 @@
       <div class="accordion" id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button subtitulo__pregunta" type="button" data-bs-toggle="collapse" data-bs-target="#preguntaUnoBautizo" aria-expanded="true" aria-controls="preguntaUnoBautizo">
+            <button class="accordion-button subtitulo__pregunta" type="button" data-bs-toggle="collapse"
+              data-bs-target="#preguntaUnoBautizo" aria-expanded="true" aria-controls="preguntaUnoBautizo">
               ¿Es posible bautizar a niños mayores de 7 años?
             </button>
           </h2>
           <div id="preguntaUnoBautizo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              Niñas y niños mayores de 7 años solo se puede bautizar siempre y cuando haya recibido una catequesis de 
-              preparación. Generalmente, como a los 9 o 10 años se preparan para la primera comunión, se recomienda que 
-              lleven esa catequesis y se puedan bautizar días antes de la comunión.</div>
+            <div class="accordion-body texto__rpta_pregunta">
+              <p>Niñas y niños mayores de 7 años solo se puede bautizar siempre y cuando haya recibido una catequesis de
+                preparación. Generalmente, como a los 9 o 10 años se preparan para la primera comunión, se recomienda
+                que
+                lleven esa catequesis y se puedan bautizar días antes de la comunión.</p>
+            </div>
           </div>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button collapsed subtitulo__pregunta" type="button" data-bs-toggle="collapse" data-bs-target="#preguntaDosBautizo" aria-expanded="false" aria-controls="preguntaDosBautizo">
+            <button class="accordion-button collapsed subtitulo__pregunta" type="button" data-bs-toggle="collapse"
+              data-bs-target="#preguntaDosBautizo" aria-expanded="false" aria-controls="preguntaDosBautizo">
               ¿Aceptan padrinos del mismo sexo?
             </button>
           </h2>
           <div id="preguntaDosBautizo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              Solo se aceptan padrino y madrina. No pueden ser dos madrinas o dos padrinos pero sí una sola madrina 
-              o un solo padrino.</div>
+            <div class="accordion-body texto__rpta_pregunta">
+              <p>Solo se aceptan padrino y madrina. No pueden ser dos madrinas o dos padrinos pero sí una sola madrina
+                o un solo padrino.</p>
+            </div>
           </div>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button collapsed subtitulo__pregunta" type="button" data-bs-toggle="collapse" data-bs-target="#preguntaTresBautizo" aria-expanded="false" aria-controls="preguntaTresBautizo">
+            <button class="accordion-button collapsed subtitulo__pregunta" type="button" data-bs-toggle="collapse"
+              data-bs-target="#preguntaTresBautizo" aria-expanded="false" aria-controls="preguntaTresBautizo">
               ¿Es indispensable que los padrinos estén casados por la iglesia?
             </button>
           </h2>
           <div id="preguntaTresBautizo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              No es indispensable que los padrinos estén casados por la iglesia. Sin embargo, sí es necesario que 
-              ambos estén confirmados.</div>
+            <div class="accordion-body texto__rpta_pregunta">
+              <p>No es indispensable que los padrinos estén casados por la iglesia. Sin embargo, sí es necesario que
+                ambos estén confirmados.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -330,29 +566,34 @@
       <div class="accordion" id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button subtitulo__pregunta" type="button" data-bs-toggle="collapse" data-bs-target="#preguntaUnoBoda" aria-expanded="true" aria-controls="preguntaUnoBoda">
+            <button class="accordion-button subtitulo__pregunta" type="button" data-bs-toggle="collapse"
+              data-bs-target="#preguntaUnoBoda" aria-expanded="true" aria-controls="preguntaUnoBoda">
               ¿Cómo saber las fechas disponibles para bodas?
             </button>
           </h2>
           <div id="preguntaUnoBoda" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              Para conocer las fechas disponibles para bodas deben acercarse al instituto IDEPT dentro del horario 
-              establecido. También hay atención telefónica.
-              MUY IMPORTANTE: No se aceptan reservas previas de fecha, estas se separan al momento de abrirse el pliego 
-              matrimonial.</div>
+            <div class="accordion-body texto__rpta_pregunta">
+              <p>Para conocer las fechas disponibles para bodas deben acercarse al instituto IDEPT dentro del horario
+                establecido. También hay atención telefónica.
+                MUY IMPORTANTE: No se aceptan reservas previas de fecha, estas se separan al momento de abrirse el
+                pliego
+                matrimonial.</p>
+            </div>
           </div>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button collapsed subtitulo__pregunta" type="button" data-bs-toggle="collapse" data-bs-target="#preguntaDosBoda" aria-expanded="false" aria-controls="preguntaDosBoda">
+            <button class="accordion-button collapsed subtitulo__pregunta" type="button" data-bs-toggle="collapse"
+              data-bs-target="#preguntaDosBoda" aria-expanded="false" aria-controls="preguntaDosBoda">
               ¿Cuál es el procedimiento para matrimonios mixtos?
             </button>
           </h2>
           <div id="preguntaDosBoda" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              Para realizar matrimonios entre una persona católica y una no católica pero sí cristiana, los 
-              contrayentes deben firmar una declaración en la que la parte no católica jura estar dispuesta a que 
-              los hijos sean educados dentro de nuestra fe católica.</div>
+            <div class="accordion-body texto__rpta_pregunta">
+              <p>Para realizar matrimonios entre una persona católica y una no católica pero sí cristiana, los
+                contrayentes deben firmar una declaración en la que la parte no católica jura estar dispuesta a que
+                los hijos sean educados dentro de nuestra fe católica.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -361,46 +602,53 @@
       <div class="accordion" id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button subtitulo__pregunta" type="button" data-bs-toggle="collapse" data-bs-target="#preguntaUnoPartida" aria-expanded="true" aria-controls="preguntaUnoPartida">
+            <button class="accordion-button subtitulo__pregunta" type="button" data-bs-toggle="collapse"
+              data-bs-target="#preguntaUnoPartida" aria-expanded="true" aria-controls="preguntaUnoPartida">
               ¿Cuál es el trámite para solicitar partidas de algún sacramento?
             </button>
           </h2>
           <div id="preguntaUnoPartida" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              Para solicitar partidas deben acercarse al despacho parroquial, dentro del horario de atención, con los 
-              datos y fecha del sacramento. No hay atención por teléfono. El precio de las partidas es de 25 soles. 
-              Normalmente se entregan en la tarde del día siguiente de solicitadas. Cualquier persona puede solicitar 
-              y/o recoger las partidas. Al momento de recogerla, se debe presentar el recibo que se le dio al momento 
-              de solicitar la partida, para ponerle el sello correspondiente.</div>
+            <div class="accordion-body texto__rpta_pregunta">
+              <p>Para solicitar partidas deben acercarse al despacho parroquial, dentro del horario de atención, con los
+                datos y fecha del sacramento. No hay atención por teléfono. El precio de las partidas es de 25 soles.
+                Normalmente se entregan en la tarde del día siguiente de solicitadas. Cualquier persona puede solicitar
+                y/o recoger las partidas. Al momento de recogerla, se debe presentar el recibo que se le dio al momento
+                de solicitar la partida, para ponerle el sello correspondiente.</p>
+            </div>
           </div>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button collapsed subtitulo__pregunta" type="button" data-bs-toggle="collapse" data-bs-target="#preguntaDosPartida" aria-expanded="false" aria-controls="preguntaDosPartida">
+            <button class="accordion-button collapsed subtitulo__pregunta" type="button" data-bs-toggle="collapse"
+              data-bs-target="#preguntaDosPartida" aria-expanded="false" aria-controls="preguntaDosPartida">
               ¿Cuál es el trámite para recibir catequesis para adultos?
             </button>
           </h2>
           <div id="preguntaDosPartida" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              Las personas mayores de 18 años a las que les falte recibir algún sacramento, pueden dejar su nombre y 
-              datos personales en el despacho parroquial. Cuando se completen los cupos les avisaremos sobre las fechas 
-              y modalidad de las charlas. También pueden enviar un whatsapp al 998 720 312 ( o llamar porque el 
-              celular está habilitado para recibir llamadas).</div>
+            <div class="accordion-body texto__rpta_pregunta">
+              <p>Las personas mayores de 18 años a las que les falte recibir algún sacramento, pueden dejar su nombre y
+                datos personales en el despacho parroquial. Cuando se completen los cupos les avisaremos sobre las
+                fechas
+                y modalidad de las charlas. También pueden enviar un whatsapp al 998 720 312 ( o llamar porque el
+                celular está habilitado para recibir llamadas).</p>
+            </div>
           </div>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button collapsed subtitulo__pregunta" type="button" data-bs-toggle="collapse" data-bs-target="#preguntaTresPartida" aria-expanded="false" aria-controls="preguntaTresPartida">
+            <button class="accordion-button collapsed subtitulo__pregunta" type="button" data-bs-toggle="collapse"
+              data-bs-target="#preguntaTresPartida" aria-expanded="false" aria-controls="preguntaTresPartida">
               ¿Cuáles son las fiestas de precepto de la Iglesia Católica?
             </button>
           </h2>
           <div id="preguntaTresPartida" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              Santa Madre de Dios: 1° de enero (feriado); Epifanía del Señor: 6 de enero; San José: 19 de marzo; 
-              Ascensión del Señor: séptimo domingo de Pascua; Cuerpo y Sangre de Cristo: varía según el Calendario 
-              Litúrgico y se celebra en domingo; San Pedro y San Pablo: 29 junio (feriado); Asunción de María: 15 de 
-              agosto; Todos los Santos: 1° de noviembre (feriado); Inmaculada Concepción de María: 8 de diciembre 
-              (feriado); Navidad: 25 de diciembre (feriado).</div>
+            <div class="accordion-body texto__rpta_pregunta">
+              <p>Santa Madre de Dios: 1° de enero (feriado); Epifanía del Señor: 6 de enero; San José: 19 de marzo;
+                Ascensión del Señor: séptimo domingo de Pascua; Cuerpo y Sangre de Cristo: varía según el Calendario
+                Litúrgico y se celebra en domingo; San Pedro y San Pablo: 29 junio (feriado); Asunción de María: 15 de
+                agosto; Todos los Santos: 1° de noviembre (feriado); Inmaculada Concepción de María: 8 de diciembre
+                (feriado); Navidad: 25 de diciembre (feriado).</p>
+            </div>
           </div>
         </div>
       </div>
@@ -417,7 +665,7 @@
           <ul>
             <li>
               <i class="fa-sharp fa-solid fa-location-dot"></i>
-              <strong>Oficina:</strong> AV. BRASIL N°. 2212 - 2218 PUEBLO LIBRE - LIMA - PERU
+              <strong>Oficina:</strong> AV. Tejada 275(1002) Miraflores Lima 18, Perú
             </li>
             <li>
               <i class="fa-solid fa-phone"></i>
@@ -425,11 +673,11 @@
             </li>
             <li>
               <i class="fa-solid fa-mobile-screen"></i>
-              <strong>Celular:</strong> +51 998 720 312
+              <strong>Celular:</strong> +51 991883413 y +51 998720312
             </li>
             <li>
               <i class="fa-solid fa-envelope"></i>
-              <strong>Correo:</strong> ricardo1622@hotmail.com
+              <strong>Correo:</strong> victorcordovavelasquez@gmail.com
             </li>
           </ul>
         </div>
@@ -439,14 +687,14 @@
               <i class="fa-solid fa-clock"></i>
               <strong>Horario de Atención:</strong>
               <br>
-              <br>Lunes a Viernes de 9:00 am a 6:00 pm
-              <br>Sábados de 9:00 am a 2:00pm
+              <br>Lunes a Sábado de 9:00 am a 4:00 pm
             </li>
             <li>
               <i class="fa-solid fa-people-group"></i>
               <strong>Visítanos:</strong>
               <br><br>
-              <a style="padding: 2em 1em 3em 2em;" href="https://web.facebook.com/victorricardo.cordovavelasquez.9" target="_blank">
+              <a style="padding: 2em 1em 3em 2em;" href="https://web.facebook.com/victorricardo.cordovavelasquez.9"
+                target="_blank">
                 <i class="fa-brands fa-facebook fa-2xl" style="color: #000;"></i>
               </a>
               <a aria-label="Chat on WhatsApp" href="https://wa.me/51998720312" target="_blank">
@@ -466,5 +714,7 @@
   </footer>
 </body>
 <script src="js/script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </html>

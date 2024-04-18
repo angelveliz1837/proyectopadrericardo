@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <title>Iglesia Católica Oriental</title>
+    <link rel="stylesheet" href="../css/estilo.css" />
+</head>
+
+<body>
+    <div class="contenedor-header">
+        <header class="hstack gap-3">
+            <!--Logo-->
+            <div class="p-2 logo"><img src="../img/logo.png"></div>
+            <!--Navegador-->
+            <nav class="navegador" id="nav">
+                <ul>
+                    <li><a href="../index.html#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="../index.html#historia" onclick="seleccionar()">HISTORIA</a></li>
+                    <li><a href="../index.html#funcion" onclick="seleccionar()">FUNCIONES</a></li>
+                    <li><a href="../index.html#formacion" onclick="seleccionar()">FORMACIÓN</a></li>
+                    <li><a href="../index.html#sacramento" onclick="seleccionar()">SACRAMENTOS</a></li>
+                    <li><a href="../index.html#mision" onclick="seleccionar()">MISIONES</a></li>
+                    <li><a href="../index.html#donacion" onclick="seleccionar()">DONACIONES</a></li>
+                    <li><a href="../index.html#pregunta" onclick="seleccionar()">PREGUNTAS</a></li>
+                </ul>
+            </nav>
+            <!--Redes-->
+            <div class="p-2 ms-auto redes">
+                <a href="https://web.facebook.com/victorricardo.cordovavelasquez.9" target="_blank">
+                    <i class="fa-brands fa-facebook fa-2xl" style="color: #000;"></i>
+                </a>
+            </div>
+            <div class="p-2 redes">
+                <a aria-label="Chat on WhatsApp" href="https://wa.me/51998720312" target="_blank">
+                    <i class="fa-brands fa-whatsapp fa-2xl" style="color: #000;"></i>
+                </a>
+            </div>
+            <div class="nav-responsive redes" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!--Contenido-->
+    <section class="container">
+        <h1 class="titulo">Iglesias Católicas Orientales</h1>
+        <div class="clearfix historia__texto">
+            <p>Las Iglesias católicas orientales son las Iglesias cristianas de tradición oriental que reconocen la
+                autoridad y primacía universal del papa —obispo de Roma— y están en plena comunión eclesiástica con él,
+                por lo que forman parte de la Iglesia católica que admite en su seno diversos ritos. De acuerdo a su
+                número de fieles y desarrollo territorial e histórico tienen diversos grados de organización y autonomía
+                interna, conservando sus ritos particulares.</p>
+        </div>
+        <h1 class="titulo">Origen</h1>
+        <div class="clearfix historia__imagen historia__texto">
+            <img src="../img/mensaje.jpg" class="col-md-4 float-md-end mb-3 ms-md-3" alt="...">
+            <p>Las Iglesias orientales católicas son atendidas por el papa a través de la Congregación para las
+                Iglesias Orientales (o Congregatio pro Ecclesiis Orientalibus en latín). Ésta fue creada en 1862 por
+                el papa Pío IX, inicialmente como parte de la Congregación para la Propagación de la Fe,
+                que supervisaba la actividad misionera, aunque se convirtió en congregación independiente en 1917.</p>
+            <p>La división entre las Iglesias de Oriente y Occidente dio lugar a la existencia de comunidades de ritos
+                orientales que se mantuvieron o entraron en plena comunión con la Santa Sede, conservando su liturgia
+                y sus tradiciones. Algunas, al parecer, nunca han estado en cisma con el obispo de Roma (como la
+                maronita
+                y la ítalo-albanesa) y otras han surgido de divisiones de las Iglesias ortodoxas o de las antiguas
+                Iglesias nacionales de Oriente. Más recientemente otras Iglesias fueron creadas por subdivisión de otras
+                ya existentes.</p>
+            <p>Regularmente constituyen minorías en países donde su contraparte ortodoxa predomina (como en Grecia,
+                Serbia, Bulgaria, Rumania, Rusia y Armenia), otras son minorías junto con sus contrapartes ortodoxas
+                en países donde predomina otra religión (melquitas en Siria, caldeos en Irak, etc.) y otras no tienen
+                contraparte cismática con Roma (maronitas e ítalo-albaneses), también debido a la migración muchos
+                católicos orientales viven hoy en países occidentales (Australia, Canadá, Estados Unidos, Argentina,
+                Francia, etc.).</p>
+            <p>Son consideradas Iglesias sui iuris y están en un plano de igualdad con el rito latino, como afirmó el
+                Concilio Vaticano II a través del documento Orientalium Ecclesiarum. Los fieles de estas Iglesias están
+                fuera de las jurisdicciones de los obispos latinos, excepto en los casos donde no tengan una
+                jurisdicción
+                propia. De la misma manera los católicos latinos están fuera de las jurisdicciones de los obispos
+                orientales, excepto en Eritrea, país donde no existe jerarquía latina, en las eparquías del norte de
+                Etiopía, en las diócesis siro-malabares fuera del estado de Kerala en la India y en algunas parroquias
+                de las eparquías ítalo albanesas bizantinas de Italia.</p>
+            <p>La organización eclesial de las Iglesias orientales católicas está regulada por el Código de los Cánones
+                de las Iglesias Orientales, que fue promulgado por el papa Juan Pablo II el 18 de octubre de 1990, y
+                entró en vigor el 1 de octubre de 1991.</p>
+            <p>En el siglo pasado existió una comunidad católica bizantina georgiana en Turquía y Georgia, pero
+                desapareció completamente y nunca fue incluida en la lista oficial de ritos orientales publicada en
+                el Anuario Pontificio.</p>
+            <p>La Santa Sede ha erigido también seis ordinariatos para los fieles de rito oriental desprovistos de un
+                ordinario de su propio rito que se encargan de la atención espiritual de católicos orientales de ritos
+                sin jerarquía organizada en España, Argentina, Francia, Austria, Polonia y Brasil, dependiendo de los
+                arzobispos latinos de Madrid, Buenos Aires, París, Viena, Varsovia, Río de Janeiro.</p>
+        </div>
+        <h1 class="titulo">Iglesias orientales católicas: La Iglesia de tradición caldea</h1>
+        <div class="clearfix historia__imagen historia__texto">
+            <img src="../img/mensaje.jpg" class="col-md-4 float-md-end mb-3 ms-md-3" alt="...">
+            <p>La Iglesia católica de tradición caldea o siro-oriental, una de las cinco grandes tradiciones orientales,
+                fue fundada, según la tradición, por el apóstol santo Tomás en Babilonia, y por sus discípulos Addai
+                y Mari, que evangelizaron a las comunidades judías que existían en el imperio Persa desde los tiempos
+                bíblicos del exilio.</p>
+            <p>Dentro de esta tradición se encuentran la Iglesia caldea, mayoritaria en Iraq, y la Iglesia siro-malabar,
+                fruto de una floreciente expansión de los nestorianos hacia la India y China, en los siglos VII y VIII.
+            </p>
+            <p>La tradición caldea o siro-oriental procede de la Iglesia asiria precalcedonense, una de las que primero
+                se separó de la comunión con Roma (en el año 410, durante el Concilio de Éfeso), por seguir las
+                doctrinas del monje Nestorio.</p>
+            <p>El nestorianismo es una herejía cristológica, que consiste básicamente en afirmar que en Cristo no hay
+                dos naturalezas en una única persona, sino dos personas, una divina y una humana. Por ello, los
+                nestorianos niegan a la Virgen María el título de Theotokos, Madre de Dios.</p>
+            <p>Además, los expertos
+                hablan también de cuestiones políticas y sociales que habrían influido en esta separación, entre ellas,
+                la hostilidad de los persas hacia los bizantinos.</p>
+            <p>La Iglesia siro-oriental o caldea vivió posteriormente varios siglos de esplendor, entre otras cosas
+                gracias a la escuela teológica de Nisibe, de donde procede san Efrén.</p>
+            <p>Siglos después de esta escisión, una parte de la Iglesia nestoriana volvió a la comunión con Roma,
+                en gran parte debido también a un cambio en la forma de sucesión del katholicos, el cabeza de la
+                Iglesia siro-oriental, que pasó a ser hereditaria, lo que produjo una fuerte ruptura interna.</p>
+            <p>El acercamiento se produjo ya en tiempos del papa Eugenio IV (1445), con la bula Benedictus sit Deus,
+                aunque el restablecimiento de la comunión tuvo que esperar más de un siglo, cuando Julio III, en 1553,
+                consagró obispo al abad Juan Sulaqa, dándole el título de Patriarca de los caldeos.</p>
+            <p>Hubo posteriormente
+                dos nuevas rupturas de los caldeos con Roma, hasta la unión definitiva con la Sede Apostólica, en 1830,
+                cuando Pío VIII confirmó a Juan Hormizdas como cabeza de los católicos caldeos.</p>
+            <p>Los caldeos, tanto ortodoxos como católicos, sufrieron varias persecuciones a manos de los otomanos
+                y de los curdos a principios del siglo XX, a causa de los cuales la población se redujo drásticamente.
+            </p>
+            <p>Actualmente, esta Iglesia sufre persecuciones en la actual Iraq de manos de los fundamentalistas
+                musulmanes, que han provocado una segunda diáspora. Uno de los momentos más dramáticos vividos
+                recientemente por la Iglesia caldea católica fue el secuestro y asesinato de monseñor Paulos Faraj
+                Rahho, arzobispo de Mosul, el 12 de marzo de 2008.</p>
+            <p>La característica principal del rito caldeo es
+                su antigüedad: se trata, según el experto Juan Nadal Cañellas, de la liturgia más arcaica de la
+                cristiandad, con un “fuerte sabor hebraico”, que se observa en la forma de la asamblea litúrgica,
+                parecida a la de una sinagoga, o en la casi total ausencia de imágenes.</p>
+            <p>La liturgia es casi toda cantada. La lengua litúrgica es el siriaco o arameo y el árabe, y en el
+                caso de la iglesia siro-malabar, el siriaco y el malayalan.</p>
+        </div>
+        <h1 class="titulo">Iglesia Caldea</h1>
+        <div class="clearfix historia__imagen historia__texto">
+            <img src="../img/mensaje.jpg" class="col-md-4 float-md-end mb-3 ms-md-3" alt="...">
+            <p>La Iglesia caldea cuenta actualmente con unos 340.000 miembros, según las estadísticas más recientes
+                del Anuario Pontificio. Su cabeza es el Patriarca de Babilonia de los Caldeos, cardenal Emmanuel Delly,
+                que reside en Bagdad.</p>
+            <p>Cuenta con 3 archieparquías metropolitanas y 5 archieparquías, que se extienden por el territorio de
+                la antigua Mesopotamia (actual Iraq e Irán). Debido a las duras condiciones en las que viven las
+                minorías cristianas, una parte importante de los fieles caldeos reside en Estados Unidos, vinculados
+                a las eparquías de San Diego y Detroit, y en Australia (eparquía de Sydney).</p>
+            <p>Actualmente, la Iglesia
+                caldea está llevando a cabo un importante papel de mediación ecuménica entre la Iglesia siro-oriental
+                ortodoxa que permaneció separada, y Roma, según explica Pier Giorgio Gianazza, uno de los expertos del
+                sínodo que se celebra estos días en el Vaticano.</p>
+            <p>De hecho, el diálogo con los cristianos ortodoxos de
+                tradición caldea ha avanzado mucho en las últimas décadas. Los católicos caldeos han recuperado en
+                los últimos años muchas de las fuentes originales arameas relativas a las disputas cristológicas,
+                revisando especialmente las obras de Nestorio.</p>
+            <p>Según algunos expertos, la cuestión cristológica que llevó al cisma tuvo más que ver con problemas
+                de entendimiento entre dos culturas lejanas conceptualmente, la griega y la asiria, que con una
+                ruptura real con el depósito de la fe.</p>
+            <p>Sobre esta base, e1 11 de noviembre de 1994, el papa Juan
+                Pablo II y el katholikos caldeo ortodoxo Mar Dinkha firmaron una declaración cristológica y
+                mariológica en la que se afirma que, aún con términos teológicos distintos, la fe de ambas Iglesias
+                es la misma.</p>
+            <p>En 1996, ambos patriarcas caldeos, el ortodoxo Mar Dinkha y el católico Raphael
+                Bidawid firmaban un acuerdo de cooperación, y en 1997, ambas iglesias levantaban sus
+                excomuniones mutuas.
+            </p>
+        </div>
+        <h1 class="titulo">Iglesia siro-malabar</h1>
+        <div class="clearfix historia__imagen historia__texto">
+            <img src="../img/mensaje.jpg" class="col-md-4 float-md-end mb-3 ms-md-3" alt="...">
+            <p>Esta iglesia de tradición caldea cuenta con alrededor de 3,4 millones de fieles, y se extiende sobre
+                todo por el norte de la India. Su actual cabeza es el arzobispo mayor Varkey Vithayathil, y tiene
+                la sede en Ernakulam, en el estado de Kerala (India).</p>
+            <p>El origen de esta Iglesia se remonta a
+                la época de gran esplendor cultural de la tradición siria, entre los siglos VII y XIII, cuando los
+                caldeos evangelizaron prácticamente toda el Asia Central, hasta llegar a China.</p>
+            <p>Se les conoce también
+                como “cristianos de santo Tomás”, nombre que les dieron los sorprendidos portugueses en el siglo
+                XV al llegar a la India.</p>
+            <p>Su unión con Roma se produjo en 1599, tras el sínodo de Diamper
+                (los expertos sostienen que fue en parte forzada por los portugueses), tras lo cual comenzó un proceso
+                de “latinización” de su liturgia y ritos, así como de su disciplina.</p>
+            <p>En 1934, el papa Pío XI ordenó
+                que se iniciase un proceso de reforma litúrgica que eliminase las imposiciones latinas a la liturgia.
+                En 1957, el papa Pío XII aprobó el ritual siro-malabar. En 1998, Juan Pablo II dio a los obispos
+                siro-malabares autoridad para resolver conflictos litúrgicos.
+            </p>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer id="informacion">
+        <div class="container">
+            <div class="row">
+                <div id="informacion__titulo" class="col-md-12">
+                    <b>INFORMACIÓN</b>
+                </div>
+                <div class="col-md-6 informacion__texto">
+                    <ul>
+                        <li>
+                            <i class="fa-sharp fa-solid fa-location-dot"></i>
+                            <strong>Oficina:</strong> AV. Tejada 275(1002) Miraflores Lima 18, Perú
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-phone"></i>
+                            <strong>Teléfono:</strong> 235-0796
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-mobile-screen"></i>
+                            <strong>Celular:</strong> +51 991883413 y +51 998720312
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <strong>Correo:</strong> victorcordovavelasquez@gmail.com
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 informacion__texto">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-clock"></i>
+                            <strong>Horario de Atención:</strong>
+                            <br>
+                            <br>Lunes a Sábado de 9:00 am a 4:00 pm
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-people-group"></i>
+                            <strong>Visítanos:</strong>
+                            <br><br>
+                            <a style="padding: 2em 1em 3em 2em;"
+                                href="https://web.facebook.com/victorricardo.cordovavelasquez.9" target="_blank">
+                                <i class="fa-brands fa-facebook fa-2xl" style="color: #000;"></i>
+                            </a>
+                            <a aria-label="Chat on WhatsApp" href="https://wa.me/51998720312" target="_blank">
+                                <i class="fa-brands fa-whatsapp fa-2xl" style="color: #000;"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div id="informacion__autor" class="col-md-12">
+                    <div>
+                        <center><b>© Copyright 2024 - Angel Veliz</b></center>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="../js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+</html>

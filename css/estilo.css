@@ -53,7 +53,13 @@ html{
     color: brown;
 }
 
-.texto p{
+.texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto p, .historia__texto p{
     text-align: justify;
 }
 
@@ -63,13 +69,17 @@ html{
     align-items: center;
 }
 
-.imagen img{
+.imagen img, .historia__imagen img{
     border: 0.4em solid;/*grosor del borde*/
     border-color: #ffe799;/*color de borde*/
     border-radius: 1em / 0.5em;/*borde*/
     -webkit-box-shadow: 12px 17px 5px 0px rgba(0,0,0,0.75);/*sombra*/
     -moz-box-shadow: 12px 17px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 12px 17px 5px 0px rgba(0,0,0,0.75);
+}
+
+ol .subtitulo{
+    margin-left: 50px;
 }
 
 .list-group-item.active{
@@ -97,6 +107,10 @@ html{
         border-color: #ffe799;
         color:brown;
     }
+
+.texto__donativo p{
+    text-align: justify;
+}
 
 #informacion {
     display: flex;
@@ -141,8 +155,25 @@ text-align: center;
 font-size: 100%;
 }
 
-@media screen and (max-width:992px){
+@media screen and (max-width:1400px){
+    .texto p{
+        padding: 0px 50px;
+    }
+}
 
+@media screen and (max-width:1280px){
+    .navegador{
+        font-size: smaller;
+    }
+}
+
+@media screen and (max-width:1161px){
+    .navegador{
+        font-size: small;
+    }
+}
+
+@media screen and (max-width:1147px){
     nav{
         display: none;
     }
@@ -164,6 +195,9 @@ font-size: 100%;
         border-bottom: 1px solid #fff;
         padding: 10px 0;
     }
+}
+
+@media screen and (max-width:992px){
 
     .texto p{
         font-size:medium;
@@ -174,13 +208,13 @@ font-size: 100%;
     }
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:855px){
     .texto {
         width: 100%;
     }
 
-    .texto p{
-        font-size: small;
+    .texto p, .historia__texto p{
+        font-size: medium;
     }
 
     .imagen {
@@ -191,7 +225,22 @@ font-size: 100%;
     .imagen img{
         width: 300px;
     }
+
+    ol .subtitulo{
+        font-size: x-large;
+    }
 }
+
+@media screen and (max-width:768px){
+    .historia__imagen{
+        text-align: center;
+
+    }
+    .historia__texto p{
+        margin-top: 15px;
+    }
+}
+
 
 @media screen and (max-width:546px){
 
@@ -219,13 +268,43 @@ font-size: 100%;
         font-size: x-large;
     }
 
+    .texto p, .historia__texto p, .texto__donativo p{
+        font-size: small;
+    }
+
+    .texto__sacramento{
+        width: 100%;
+        font-size: small;
+    }
+
+        .texto__sacramento p{
+            padding: 0px 10px;
+            text-align: justify;
+        }
+
     .imagen img{
-        width: 250px;
+        width: 150px;
+    }
+
+    .historia__imagen img{
+        width: 230px;
     }
 
     .subtitulo{
         font-size: x-large;
     }
+
+    .texto__mision{
+        font-size: small;
+    }
+
+    .texto__rpta_pregunta{
+        width: 100%;
+        font-size: small;
+        text-align: justify;
+    }
+
+
 
 }
 
